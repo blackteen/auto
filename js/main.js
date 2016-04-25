@@ -32,3 +32,27 @@ var setLang = $('.language-select').data('location'),
       $('.language-select li').removeClass('active');
       $(this).toggleClass('active');
 })
+
+
+
+
+$(document).ready(function(){
+  $(".dropbtn").click(function(){
+  $(".dropdown-content").toggleClass("show")
+ 
+ });
+	
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}	
+});
+

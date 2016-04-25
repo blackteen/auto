@@ -154,7 +154,6 @@ section>h2, .white-popup>h2{border-bottom:3px solid #000;text-align: left; }
 .delivery .choise-item:nth-child(2){background-position: -360px 0px;}
 .delivery .choise-item:nth-child(3){background-position: -432px 0px;}
 
-
 /*footer*/
 
 .footer-info{background: #3b4050;color:#cccccc;padding: 30px 0;}
@@ -171,87 +170,32 @@ section>h2, .white-popup>h2{border-bottom:3px solid #000;text-align: left; }
 .copyright-icon:hover .copy-icon {background-position: -29px 0;}
 .copyright-icon:hover p{text-decoration: underline;}
 
-
 /*pop-up*/
 .white-popup {position: relative;background: #FFF;padding: 10px 35px 15px;width:auto;max-width: 480px;margin: 20px auto;text-align: center;	}
 .white-popup input:not([type="submit"]){width: 100%;margin: 7px 0;height: 35px;border-radius: 2px;border:1px solid #999999;padding:0 20px 0 10px;	}
-.white-popup input:not([type="submit"]):focus{border-color:#fea901;
-	
- border-left-width: 35px;
-
-}
+.white-popup input:not([type="submit"]):focus{border-color:#fea901;border-left-width: 35px;}
 .white-popup label:before{content:"";width:20px;height: 100%;background: #fea901; display: block}
 .white-popup input[type="submit"]{margin: 15px 0;}
 .mfp-close-btn-in .mfp-close{color:#fea901 !important;}
-
-
-.white-popup input:not([type="submit"]) + i.fa {
-    color: #fff;
-    font-size: 1.3em;
-    position: absolute;
-    margin-top: -33px;
-    opacity: 0;
-    left: 0;
-    transition: all 0.1s ease-in;
-    margin-left: 14px;
-}
-.white-popup input:not([type="submit"]):focus + i.fa {
-  opacity: 1;
-  left: 30px;
-  transition: all 0.25s ease-out;
-}
-
+.white-popup input:not([type="submit"]) + i.fa {color: #fff;font-size: 1.3em;position: absolute;margin-top: -33px;opacity: 0;left: 0;transition: all 0.1s ease-in;margin-left: 14px;}
+.white-popup input:not([type="submit"]):focus + i.fa {opacity: 1;left: 30px;transition: all 0.25s ease-out;}
 
 /*lang-select*/
 
-.lang-sel{
-	display: inline-block;
-    vertical-align: top;
-	width: 39px;
-	height: 23px;
-	position: relative;
-	z-index: 20;
-}
+.lang-sel{display: inline-block;vertical-align: top;width: 39px;height: 23px;position: relative;z-index: 20;}
+.language-select {display: inline-flex;flex-direction: column;color: #000;position: absolute;text-transform: uppercase;height: 23px;overflow: hidden;cursor: pointer;width: 39px;border-radius: 3px;border:1px solid #ccc;box-shadow: 0 -1px  0 #999}
+.language-select li {text-align: center;flex: 1;display: flex;flex-direction: column;justify-content: center;background: #fff;order: 2;min-height: 23px;font-size: 14px;max-height: 23px;text-align: center;line-height: 23px;}
+.language-select li:hover {cursor: pointer;background: #eea634;}
+.language-select.open {height: auto;}
+.language-select li.active {order: 1;pointer-events: none;}
 
-.language-select {
-  display: inline-flex;
-  flex-direction: column;
-  color: #000;
-	position: absolute;
-  text-transform: uppercase;
-  height: 23px;
-  overflow: hidden;
-  cursor: pointer;
-		width: 39px;
-	border-radius: 3px;
-	border:1px solid #ccc;
-	box-shadow: 0 -1px  0 #999
-}
-.language-select li {
-  text-align: center;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
- background: #fff;
-  order: 2;
-	
-  min-height: 23px;
-	font-size: 14px;
-	max-height: 23px;
-	text-align: center;
-	line-height: 23px;
-}
-.language-select li:hover {
-  cursor: pointer;
-  background: #eea634;
-}
-
-.language-select.open {
-  height: auto;
-}
-
-.language-select li.active {
-  order: 1;
-  pointer-events: none;
-}
+/*responsive-menu*/
+.responsive-menu{list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #f2a203;display: none;box-shadow: 2px 2px 4px 0px rgba(0,0,0,.5);}
+.responsive-menu li {float: left;}
+.responsive-menu li a, .dropbtn {display: block;color: #fff;text-align: center;padding: 6px 9px;text-decoration: none;	}
+.responsive-menu li a:hover, .responsive-menu  .dropdown:hover .dropbtn {}
+.responsive-menu li.dropdown {display: inline-block;}
+.dropdown-content {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 7;}
+.responsive-menu .dropdown-content a {color: black;padding: 12px 16px;text-decoration: none;display: block;text-align: left;}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.show {display:block;}
