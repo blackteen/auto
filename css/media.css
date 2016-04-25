@@ -1,0 +1,53 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.top-line .top-line-nav nav a:after{content: none;}
+	.logo{position: static;float: left;}
+	.wrap-to-basket{float: none;}
+	.header-circl .phone{font-size:21px}
+	.header-info, .header-circl, .header-basket{padding: 15px 0;}
+	.header-info:after{right: -8px;}
+	.form-block{text-align: center;}
+	.form-block input{margin-top: 10px;}
+	 aside .sale-item{width: 100%}
+	.wrap-to-basket{text-align: center;}
+	.categori-item{width: 232px;height: 80px;}
+	.categori-item img {width: 31%;}
+	.wrapp{width: 47%;height: auto;}
+	.visited-item{height: auto;}
+	.footer-info form input[type="submit"], .footer-info form input[type="text"]{width: 100%; margin: 0 auto;display: block; max-width:420px;}
+	.header-bottom-line form input[type="text"]{width: 250px;}
+	.visited-before .wrapp:nth-child(3){display: none;}
+	.delivery-section .row > div{border: none;}
+	.categori-item p {line-height: 1.2;}
+	.wrapp{ padding-bottom: 8px;}
+	.sale-section{padding: 15px 0;}
+	
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.wrapp{width: 269px;}
+	.sale-item{width: 260px !important;}
+	.header-info{display: none;}
+	.logo{position: static;margin: 20px auto;float: none;display: block;}
+	.top-line-nav nav{display:none;}
+	aside .spare-part, aside h3{max-width: 450px;width: 100%;margin: 0 auto;}
+	.header-bottom-line form select{width: 100%;max-width: 43%;margin: 5px 0;}
+	.header-bottom-line form select:nth-child(4){margin: 5px 0}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+}
+
