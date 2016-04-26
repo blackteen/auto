@@ -4,6 +4,9 @@
 @media only screen and (max-width : 1200px) {
 	.logo{position: static;float: left;}
 	.header-info, .header-circl, .header-basket{margin-left: 10px}
+	.wrapp{width: 47%;height: auto;}
+	.visited-item{height: auto;}
+	.wrapp{ padding-bottom: 8px;}
 }
 
 /* Medium Devices, Desktops */
@@ -40,7 +43,7 @@
 	.header-info{display: none;}
 	.logo{position: static;margin: 20px auto;float: none;display: block;}
 	.top-line-nav nav{display:none;}
-	aside .spare-part, aside h3{max-width: 450px;width: 100%;margin: 0 auto;}
+	 aside .spare-part, aside h3{max-width: 450px;width: 100%;margin: 0 auto;}
 	.header-bottom-line form select{width: 100%;max-width: 43%;margin: 5px 0;}
 	.header-bottom-line form select:nth-child(4){margin: 5px 0}
 	.responsive-menu{display: inline-block}
