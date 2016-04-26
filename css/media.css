@@ -2,6 +2,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	.logo{position: static;float: left;}
+	.header-info, .header-circl, .header-basket{margin-left: 10px}
 }
 
 /* Medium Devices, Desktops */
